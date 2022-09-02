@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		221A1B3D28C27017009B57BE /* RequestProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A1B3C28C27017009B57BE /* RequestProtocolTests.swift */; };
+		221A1B3F28C27E93009B57BE /* TweetListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A1B3E28C27E93009B57BE /* TweetListServiceTests.swift */; };
+		221A1B4128C2838F009B57BE /* MockRule.json in Resources */ = {isa = PBXBuildFile; fileRef = 221A1B4028C2838F009B57BE /* MockRule.json */; };
+		2222FF4B28C1FF5000B18807 /* MockResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222FF4A28C1FF5000B18807 /* MockResponseValidator.swift */; };
+		2222FF4D28C2007B00B18807 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222FF4C28C2007B00B18807 /* MockURLSession.swift */; };
+		2222FF4F28C2050B00B18807 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222FF4E28C2050B00B18807 /* MockURLSessionDataTask.swift */; };
+		2222FF5128C2076600B18807 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222FF5028C2076600B18807 /* MockNetworkManager.swift */; };
+		22BB4AEB28BF7C570084DEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4AEA28BF7C570084DEF3 /* AppDelegate.swift */; };
+		22BB4AF428BF7C5B0084DEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BB4AF328BF7C5B0084DEF3 /* Assets.xcassets */; };
+		22BB4AF728BF7C5B0084DEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BB4AF528BF7C5B0084DEF3 /* LaunchScreen.storyboard */; };
+		22BB4B0228BF7C5B0084DEF3 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B0128BF7C5B0084DEF3 /* AppCoordinatorTests.swift */; };
+		22BB4B1E28BF810A0084DEF3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B1D28BF810A0084DEF3 /* AppCoordinator.swift */; };
+		22BB4B2828BF81840084DEF3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B2728BF81840084DEF3 /* Coordinator.swift */; };
+		22BB4B2A28BF819F0084DEF3 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B2928BF819F0084DEF3 /* UIViewController+Alert.swift */; };
+		22BB4B2D28BF81CE0084DEF3 /* TweetsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B2C28BF81CE0084DEF3 /* TweetsListViewController.swift */; };
+		22BB4B2F28BF81E50084DEF3 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B2E28BF81E50084DEF3 /* TweetDetailViewController.swift */; };
+		22BB4B3128BF81F30084DEF3 /* TweetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B3028BF81F30084DEF3 /* TweetDetailViewModel.swift */; };
+		22BB4B3328BF84170084DEF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B3228BF84170084DEF3 /* Constants.swift */; };
+		22BB4B3528BF8B800084DEF3 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B3428BF8B800084DEF3 /* TweetCell.swift */; };
+		22BB4B3828BF8BB90084DEF3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B3728BF8BB90084DEF3 /* TableViewCell.swift */; };
+		22BB4B3D28BF8CA70084DEF3 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B3C28BF8CA70084DEF3 /* Tweet.swift */; };
+		22BB4B3F28BF8EDB0084DEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B3E28BF8EDB0084DEF3 /* ViewController.swift */; };
+		22BB4B4128BF90FE0084DEF3 /* TweetsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B4028BF90FE0084DEF3 /* TweetsListViewModel.swift */; };
+		22BB4B4528BFC46D0084DEF3 /* TweetsListServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B4428BFC46D0084DEF3 /* TweetsListServiceProtocol.swift */; };
+		22BB4B4728BFC4D40084DEF3 /* TweetsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B4628BFC4D40084DEF3 /* TweetsListService.swift */; };
+		22BB4B4A28C084C60084DEF3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B4928C084C60084DEF3 /* RequestProtocol.swift */; };
+		22BB4B4C28C084DC0084DEF3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B4B28C084DC0084DEF3 /* HTTPMethod.swift */; };
+		22BB4B4F28C085010084DEF3 /* ResponseValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B4E28C085010084DEF3 /* ResponseValidatorProtocol.swift */; };
+		22BB4B5128C0850A0084DEF3 /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B5028C0850A0084DEF3 /* ResponseValidator.swift */; };
+		22BB4B5328C0851C0084DEF3 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B5228C0851C0084DEF3 /* RequestError.swift */; };
+		22BB4B5528C085470084DEF3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B5428C085470084DEF3 /* NetworkManager.swift */; };
+		22BB4B5828C0856E0084DEF3 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B5728C0856E0084DEF3 /* NetworkManagerProtocol.swift */; };
+		22BB4B5A28C0B7F10084DEF3 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B5928C0B7F10084DEF3 /* Rule.swift */; };
+		22BB4B5C28C0BB070084DEF3 /* AddRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B5B28C0BB070084DEF3 /* AddRule.swift */; };
+		22BB4B5E28C0BB540084DEF3 /* DeleteRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B5D28C0BB540084DEF3 /* DeleteRule.swift */; };
+		22BB4B6528C0CDD90084DEF3 /* TweetsListRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB4B6428C0CDD90084DEF3 /* TweetsListRequests.swift */; };
+		45AEDF5BE5AE4D68A1DC237D /* Pods_Snapp_iOS_HomeTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D3EC895CA79CC2061EBA25 /* Pods_Snapp_iOS_HomeTaskTests.framework */; };
+		52ED45AB0A5D566456DB0C1F /* Pods_Snapp_iOS_HomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE31F20A144BBDD84FBBEA4 /* Pods_Snapp_iOS_HomeTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22BB4AFE28BF7C5B0084DEF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22BB4ADF28BF7C570084DEF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22BB4AE628BF7C570084DEF3;
+			remoteInfo = "Snapp-iOS-HomeTask";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		221A1B3C28C27017009B57BE /* RequestProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocolTests.swift; sourceTree = "<group>"; };
+		221A1B3E28C27E93009B57BE /* TweetListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetListServiceTests.swift; sourceTree = "<group>"; };
+		221A1B4028C2838F009B57BE /* MockRule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockRule.json; sourceTree = "<group>"; };
+		2222FF4A28C1FF5000B18807 /* MockResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseValidator.swift; sourceTree = "<group>"; };
+		2222FF4C28C2007B00B18807 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		2222FF4E28C2050B00B18807 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		2222FF5028C2076600B18807 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		22BB4AE728BF7C570084DEF3 /* Snapp-iOS-HomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snapp-iOS-HomeTask.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BB4AEA28BF7C570084DEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22BB4AF328BF7C5B0084DEF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22BB4AF628BF7C5B0084DEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22BB4AF828BF7C5B0084DEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Snapp-iOS-HomeTask/New Group/Info.plist"; sourceTree = SOURCE_ROOT; };
+		22BB4AFD28BF7C5B0084DEF3 /* Snapp-iOS-HomeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Snapp-iOS-HomeTaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BB4B0128BF7C5B0084DEF3 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		22BB4B1D28BF810A0084DEF3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		22BB4B2728BF81840084DEF3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		22BB4B2928BF819F0084DEF3 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		22BB4B2C28BF81CE0084DEF3 /* TweetsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsListViewController.swift; sourceTree = "<group>"; };
+		22BB4B2E28BF81E50084DEF3 /* TweetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
+		22BB4B3028BF81F30084DEF3 /* TweetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewModel.swift; sourceTree = "<group>"; };
+		22BB4B3228BF84170084DEF3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22BB4B3428BF8B800084DEF3 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		22BB4B3728BF8BB90084DEF3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		22BB4B3C28BF8CA70084DEF3 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		22BB4B3E28BF8EDB0084DEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22BB4B4028BF90FE0084DEF3 /* TweetsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsListViewModel.swift; sourceTree = "<group>"; };
+		22BB4B4428BFC46D0084DEF3 /* TweetsListServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsListServiceProtocol.swift; sourceTree = "<group>"; };
+		22BB4B4628BFC4D40084DEF3 /* TweetsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsListService.swift; sourceTree = "<group>"; };
+		22BB4B4928C084C60084DEF3 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		22BB4B4B28C084DC0084DEF3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		22BB4B4E28C085010084DEF3 /* ResponseValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseValidatorProtocol.swift; sourceTree = "<group>"; };
+		22BB4B5028C0850A0084DEF3 /* ResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
+		22BB4B5228C0851C0084DEF3 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		22BB4B5428C085470084DEF3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		22BB4B5728C0856E0084DEF3 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		22BB4B5928C0B7F10084DEF3 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		22BB4B5B28C0BB070084DEF3 /* AddRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRule.swift; sourceTree = "<group>"; };
+		22BB4B5D28C0BB540084DEF3 /* DeleteRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRule.swift; sourceTree = "<group>"; };
+		22BB4B6428C0CDD90084DEF3 /* TweetsListRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsListRequests.swift; sourceTree = "<group>"; };
+		22F0E8C4C739E8B232123ADE /* Pods-Snapp-iOS-HomeTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapp-iOS-HomeTask.release.xcconfig"; path = "Target Support Files/Pods-Snapp-iOS-HomeTask/Pods-Snapp-iOS-HomeTask.release.xcconfig"; sourceTree = "<group>"; };
+		55D3EC895CA79CC2061EBA25 /* Pods_Snapp_iOS_HomeTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapp_iOS_HomeTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE31F20A144BBDD84FBBEA4 /* Pods_Snapp_iOS_HomeTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapp_iOS_HomeTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8F1113AFDA2AC67109C323 /* Pods-Snapp-iOS-HomeTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapp-iOS-HomeTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Snapp-iOS-HomeTaskTests/Pods-Snapp-iOS-HomeTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AC9E93F2838EF354000BD98 /* Pods-Snapp-iOS-HomeTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapp-iOS-HomeTaskTests.release.xcconfig"; path = "Target Support Files/Pods-Snapp-iOS-HomeTaskTests/Pods-Snapp-iOS-HomeTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B21296146713BFD819149D7E /* Pods-Snapp-iOS-HomeTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapp-iOS-HomeTask.debug.xcconfig"; path = "Target Support Files/Pods-Snapp-iOS-HomeTask/Pods-Snapp-iOS-HomeTask.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22BB4AE428BF7C570084DEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ED45AB0A5D566456DB0C1F /* Pods_Snapp_iOS_HomeTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB4AFA28BF7C5B0084DEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AEDF5BE5AE4D68A1DC237D /* Pods_Snapp_iOS_HomeTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		221A1B3A28C23450009B57BE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				221A1B3B28C23455009B57BE /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		221A1B3B28C23455009B57BE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				221A1B3C28C27017009B57BE /* RequestProtocolTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2222FF4928C1DFBC00B18807 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				221A1B4028C2838F009B57BE /* MockRule.json */,
+				2222FF4A28C1FF5000B18807 /* MockResponseValidator.swift */,
+				2222FF4C28C2007B00B18807 /* MockURLSession.swift */,
+				2222FF4E28C2050B00B18807 /* MockURLSessionDataTask.swift */,
+				2222FF5028C2076600B18807 /* MockNetworkManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2222FF5228C207E300B18807 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2222FF5328C207E700B18807 /* TweetesList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2222FF5328C207E700B18807 /* TweetesList */ = {
+			isa = PBXGroup;
+			children = (
+				221A1B3E28C27E93009B57BE /* TweetListServiceTests.swift */,
+			);
+			path = TweetesList;
+			sourceTree = "<group>";
+		};
+		22BB4ADE28BF7C570084DEF3 = {
+			isa = PBXGroup;
+			children = (
+				22BB4AE928BF7C570084DEF3 /* Snapp-iOS-HomeTask */,
+				22BB4B0028BF7C5B0084DEF3 /* Snapp-iOS-HomeTaskTests */,
+				22BB4AE828BF7C570084DEF3 /* Products */,
+				E7154BDBDE2C13D8F0BBC8F8 /* Pods */,
+				DB2823EBFD90113BECA10975 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22BB4AE828BF7C570084DEF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4AE728BF7C570084DEF3 /* Snapp-iOS-HomeTask.app */,
+				22BB4AFD28BF7C5B0084DEF3 /* Snapp-iOS-HomeTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22BB4AE928BF7C570084DEF3 /* Snapp-iOS-HomeTask */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B1C28BF80FD0084DEF3 /* App */,
+				22BB4B1F28BF812B0084DEF3 /* Scenes */,
+				22BB4B2528BF815B0084DEF3 /* Service */,
+				22BB4B2228BF814B0084DEF3 /* Utility */,
+				22BB4B1B28BF80660084DEF3 /* Supporting Files */,
+			);
+			path = "Snapp-iOS-HomeTask";
+			sourceTree = "<group>";
+		};
+		22BB4B0028BF7C5B0084DEF3 /* Snapp-iOS-HomeTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				2222FF4928C1DFBC00B18807 /* Mocks */,
+				2222FF5228C207E300B18807 /* Scenes */,
+				221A1B3A28C23450009B57BE /* Service */,
+				22BB4B1A28BF7F6E0084DEF3 /* Coordinator */,
+			);
+			path = "Snapp-iOS-HomeTaskTests";
+			sourceTree = "<group>";
+		};
+		22BB4B1A28BF7F6E0084DEF3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B0128BF7C5B0084DEF3 /* AppCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		22BB4B1B28BF80660084DEF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4AF328BF7C5B0084DEF3 /* Assets.xcassets */,
+				22BB4AF528BF7C5B0084DEF3 /* LaunchScreen.storyboard */,
+				22BB4AF828BF7C5B0084DEF3 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22BB4B1C28BF80FD0084DEF3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4AEA28BF7C570084DEF3 /* AppDelegate.swift */,
+				22BB4B1D28BF810A0084DEF3 /* AppCoordinator.swift */,
+				22BB4B3228BF84170084DEF3 /* Constants.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22BB4B1F28BF812B0084DEF3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B2028BF81310084DEF3 /* TweetsList */,
+				22BB4B2128BF813F0084DEF3 /* TweetDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		22BB4B2028BF81310084DEF3 /* TweetsList */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B3B28BF8C8A0084DEF3 /* Service */,
+				22BB4B3928BF8C7A0084DEF3 /* Model */,
+				22BB4B3A28BF8C810084DEF3 /* ViewModel */,
+				22BB4B2B28BF81B30084DEF3 /* View */,
+			);
+			path = TweetsList;
+			sourceTree = "<group>";
+		};
+		22BB4B2128BF813F0084DEF3 /* TweetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B2E28BF81E50084DEF3 /* TweetDetailViewController.swift */,
+				22BB4B3028BF81F30084DEF3 /* TweetDetailViewModel.swift */,
+			);
+			path = TweetDetail;
+			sourceTree = "<group>";
+		};
+		22BB4B2228BF814B0084DEF3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B3628BF8BA60084DEF3 /* Protocols */,
+				22BB4B2328BF81510084DEF3 /* Extensions */,
+				22BB4B2428BF81560084DEF3 /* Coordinator */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		22BB4B2328BF81510084DEF3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B2928BF819F0084DEF3 /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		22BB4B2428BF81560084DEF3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B2728BF81840084DEF3 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		22BB4B2528BF815B0084DEF3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B2628BF81600084DEF3 /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		22BB4B2628BF81600084DEF3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B5628C085540084DEF3 /* NetworkManager */,
+				22BB4B4D28C084E60084DEF3 /* ResponseValidator */,
+				22BB4B4928C084C60084DEF3 /* RequestProtocol.swift */,
+				22BB4B4B28C084DC0084DEF3 /* HTTPMethod.swift */,
+				22BB4B5228C0851C0084DEF3 /* RequestError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		22BB4B2B28BF81B30084DEF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B2C28BF81CE0084DEF3 /* TweetsListViewController.swift */,
+				22BB4B3428BF8B800084DEF3 /* TweetCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22BB4B3628BF8BA60084DEF3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B3728BF8BB90084DEF3 /* TableViewCell.swift */,
+				22BB4B3E28BF8EDB0084DEF3 /* ViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		22BB4B3928BF8C7A0084DEF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B3C28BF8CA70084DEF3 /* Tweet.swift */,
+				22BB4B5928C0B7F10084DEF3 /* Rule.swift */,
+				22BB4B5B28C0BB070084DEF3 /* AddRule.swift */,
+				22BB4B5D28C0BB540084DEF3 /* DeleteRule.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22BB4B3A28BF8C810084DEF3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B4028BF90FE0084DEF3 /* TweetsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22BB4B3B28BF8C8A0084DEF3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B4428BFC46D0084DEF3 /* TweetsListServiceProtocol.swift */,
+				22BB4B4628BFC4D40084DEF3 /* TweetsListService.swift */,
+				22BB4B6428C0CDD90084DEF3 /* TweetsListRequests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		22BB4B4D28C084E60084DEF3 /* ResponseValidator */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B4E28C085010084DEF3 /* ResponseValidatorProtocol.swift */,
+				22BB4B5028C0850A0084DEF3 /* ResponseValidator.swift */,
+			);
+			path = ResponseValidator;
+			sourceTree = "<group>";
+		};
+		22BB4B5628C085540084DEF3 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				22BB4B5728C0856E0084DEF3 /* NetworkManagerProtocol.swift */,
+				22BB4B5428C085470084DEF3 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		DB2823EBFD90113BECA10975 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EE31F20A144BBDD84FBBEA4 /* Pods_Snapp_iOS_HomeTask.framework */,
+				55D3EC895CA79CC2061EBA25 /* Pods_Snapp_iOS_HomeTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7154BDBDE2C13D8F0BBC8F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B21296146713BFD819149D7E /* Pods-Snapp-iOS-HomeTask.debug.xcconfig */,
+				22F0E8C4C739E8B232123ADE /* Pods-Snapp-iOS-HomeTask.release.xcconfig */,
+				6D8F1113AFDA2AC67109C323 /* Pods-Snapp-iOS-HomeTaskTests.debug.xcconfig */,
+				7AC9E93F2838EF354000BD98 /* Pods-Snapp-iOS-HomeTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22BB4AE628BF7C570084DEF3 /* Snapp-iOS-HomeTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BB4B1128BF7C5B0084DEF3 /* Build configuration list for PBXNativeTarget "Snapp-iOS-HomeTask" */;
+			buildPhases = (
+				42317B5CEEE9A93F4528940F /* [CP] Check Pods Manifest.lock */,
+				22BB4AE328BF7C570084DEF3 /* Sources */,
+				22BB4AE428BF7C570084DEF3 /* Frameworks */,
+				22BB4AE528BF7C570084DEF3 /* Resources */,
+				275974A40ACDD89FCED10795 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snapp-iOS-HomeTask";
+			productName = "Snapp-iOS-HomeTask";
+			productReference = 22BB4AE728BF7C570084DEF3 /* Snapp-iOS-HomeTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22BB4AFC28BF7C5B0084DEF3 /* Snapp-iOS-HomeTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BB4B1428BF7C5B0084DEF3 /* Build configuration list for PBXNativeTarget "Snapp-iOS-HomeTaskTests" */;
+			buildPhases = (
+				0593BE4D0E17E38AA60B710D /* [CP] Check Pods Manifest.lock */,
+				22BB4AF928BF7C5B0084DEF3 /* Sources */,
+				22BB4AFA28BF7C5B0084DEF3 /* Frameworks */,
+				22BB4AFB28BF7C5B0084DEF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22BB4AFF28BF7C5B0084DEF3 /* PBXTargetDependency */,
+			);
+			name = "Snapp-iOS-HomeTaskTests";
+			productName = "Snapp-iOS-HomeTaskTests";
+			productReference = 22BB4AFD28BF7C5B0084DEF3 /* Snapp-iOS-HomeTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22BB4ADF28BF7C570084DEF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					22BB4AE628BF7C570084DEF3 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					22BB4AFC28BF7C5B0084DEF3 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 22BB4AE628BF7C570084DEF3;
+					};
+				};
+			};
+			buildConfigurationList = 22BB4AE228BF7C570084DEF3 /* Build configuration list for PBXProject "Snapp-iOS-HomeTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22BB4ADE28BF7C570084DEF3;
+			productRefGroup = 22BB4AE828BF7C570084DEF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22BB4AE628BF7C570084DEF3 /* Snapp-iOS-HomeTask */,
+				22BB4AFC28BF7C5B0084DEF3 /* Snapp-iOS-HomeTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22BB4AE528BF7C570084DEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB4AF728BF7C5B0084DEF3 /* LaunchScreen.storyboard in Resources */,
+				22BB4AF428BF7C5B0084DEF3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB4AFB28BF7C5B0084DEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221A1B4128C2838F009B57BE /* MockRule.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0593BE4D0E17E38AA60B710D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Snapp-iOS-HomeTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		275974A40ACDD89FCED10795 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapp-iOS-HomeTask/Pods-Snapp-iOS-HomeTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapp-iOS-HomeTask/Pods-Snapp-iOS-HomeTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snapp-iOS-HomeTask/Pods-Snapp-iOS-HomeTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42317B5CEEE9A93F4528940F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Snapp-iOS-HomeTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22BB4AE328BF7C570084DEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB4B5828C0856E0084DEF3 /* NetworkManagerProtocol.swift in Sources */,
+				22BB4B2D28BF81CE0084DEF3 /* TweetsListViewController.swift in Sources */,
+				22BB4B4128BF90FE0084DEF3 /* TweetsListViewModel.swift in Sources */,
+				22BB4B1E28BF810A0084DEF3 /* AppCoordinator.swift in Sources */,
+				22BB4B5528C085470084DEF3 /* NetworkManager.swift in Sources */,
+				22BB4B5A28C0B7F10084DEF3 /* Rule.swift in Sources */,
+				22BB4AEB28BF7C570084DEF3 /* AppDelegate.swift in Sources */,
+				22BB4B3528BF8B800084DEF3 /* TweetCell.swift in Sources */,
+				22BB4B4F28C085010084DEF3 /* ResponseValidatorProtocol.swift in Sources */,
+				22BB4B2828BF81840084DEF3 /* Coordinator.swift in Sources */,
+				22BB4B3828BF8BB90084DEF3 /* TableViewCell.swift in Sources */,
+				22BB4B6528C0CDD90084DEF3 /* TweetsListRequests.swift in Sources */,
+				22BB4B4528BFC46D0084DEF3 /* TweetsListServiceProtocol.swift in Sources */,
+				22BB4B3F28BF8EDB0084DEF3 /* ViewController.swift in Sources */,
+				22BB4B4728BFC4D40084DEF3 /* TweetsListService.swift in Sources */,
+				22BB4B3128BF81F30084DEF3 /* TweetDetailViewModel.swift in Sources */,
+				22BB4B4A28C084C60084DEF3 /* RequestProtocol.swift in Sources */,
+				22BB4B5128C0850A0084DEF3 /* ResponseValidator.swift in Sources */,
+				22BB4B5E28C0BB540084DEF3 /* DeleteRule.swift in Sources */,
+				22BB4B5C28C0BB070084DEF3 /* AddRule.swift in Sources */,
+				22BB4B4C28C084DC0084DEF3 /* HTTPMethod.swift in Sources */,
+				22BB4B2A28BF819F0084DEF3 /* UIViewController+Alert.swift in Sources */,
+				22BB4B5328C0851C0084DEF3 /* RequestError.swift in Sources */,
+				22BB4B2F28BF81E50084DEF3 /* TweetDetailViewController.swift in Sources */,
+				22BB4B3328BF84170084DEF3 /* Constants.swift in Sources */,
+				22BB4B3D28BF8CA70084DEF3 /* Tweet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BB4AF928BF7C5B0084DEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2222FF4D28C2007B00B18807 /* MockURLSession.swift in Sources */,
+				2222FF4F28C2050B00B18807 /* MockURLSessionDataTask.swift in Sources */,
+				221A1B3D28C27017009B57BE /* RequestProtocolTests.swift in Sources */,
+				22BB4B0228BF7C5B0084DEF3 /* AppCoordinatorTests.swift in Sources */,
+				2222FF4B28C1FF5000B18807 /* MockResponseValidator.swift in Sources */,
+				2222FF5128C2076600B18807 /* MockNetworkManager.swift in Sources */,
+				221A1B3F28C27E93009B57BE /* TweetListServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22BB4AFF28BF7C5B0084DEF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22BB4AE628BF7C570084DEF3 /* Snapp-iOS-HomeTask */;
+			targetProxy = 22BB4AFE28BF7C5B0084DEF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22BB4AF528BF7C5B0084DEF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22BB4AF628BF7C5B0084DEF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22BB4B0F28BF7C5B0084DEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22BB4B1028BF7C5B0084DEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22BB4B1228BF7C5B0084DEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21296146713BFD819149D7E /* Pods-Snapp-iOS-HomeTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FNNS73DWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snapp-iOS-HomeTask/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Snapp-iOS-HomeTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		22BB4B1328BF7C5B0084DEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F0E8C4C739E8B232123ADE /* Pods-Snapp-iOS-HomeTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FNNS73DWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snapp-iOS-HomeTask/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Snapp-iOS-HomeTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		22BB4B1528BF7C5B0084DEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8F1113AFDA2AC67109C323 /* Pods-Snapp-iOS-HomeTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FNNS73DWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Snapp-iOS-HomeTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snapp-iOS-HomeTask.app/Snapp-iOS-HomeTask";
+			};
+			name = Debug;
+		};
+		22BB4B1628BF7C5B0084DEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC9E93F2838EF354000BD98 /* Pods-Snapp-iOS-HomeTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FNNS73DWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Snapp-iOS-HomeTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snapp-iOS-HomeTask.app/Snapp-iOS-HomeTask";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22BB4AE228BF7C570084DEF3 /* Build configuration list for PBXProject "Snapp-iOS-HomeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BB4B0F28BF7C5B0084DEF3 /* Debug */,
+				22BB4B1028BF7C5B0084DEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BB4B1128BF7C5B0084DEF3 /* Build configuration list for PBXNativeTarget "Snapp-iOS-HomeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BB4B1228BF7C5B0084DEF3 /* Debug */,
+				22BB4B1328BF7C5B0084DEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BB4B1428BF7C5B0084DEF3 /* Build configuration list for PBXNativeTarget "Snapp-iOS-HomeTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BB4B1528BF7C5B0084DEF3 /* Debug */,
+				22BB4B1628BF7C5B0084DEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22BB4ADF28BF7C570084DEF3 /* Project object */;
+}

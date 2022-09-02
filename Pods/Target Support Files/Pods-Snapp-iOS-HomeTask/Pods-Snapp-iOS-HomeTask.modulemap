@@ -1,0 +1,6 @@
+framework module Pods_Snapp_iOS_HomeTask {
+  umbrella header "Pods-Snapp-iOS-HomeTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
